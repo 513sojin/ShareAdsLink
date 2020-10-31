@@ -1,16 +1,29 @@
 import React from 'react';
+import {Link, Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import './App.css';
+import User from './Component/User';
+import AdContent from './Component/AdContent';
+import Home from './Home';
 
 function App() {
   return (
-    <div>
+    <Router>
       <header>
         <div>ShareAdsLink</div>
         <nav>
-            <li> <a href="#">Login</a></li>
-            <li> <a href="#">signin</a></li>
+            <Link to="/User">
+              <li className="button">Login</li>
+            </Link>
+            <Link to="/AdContent">
+              <li className="button">SignUp</li>
+            </Link>
         </nav>
       </header>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/User" component={User} />
+        <Route path="/Adcontent" component={AdContent}/>
+      </Switch>
       
       <div className="wrapper">
         
@@ -33,7 +46,7 @@ function App() {
         <div className="thirdPage"></div>
         <div className="footer"></div>
       </div>
-    </div>
+    </Router>
   );
 }
 

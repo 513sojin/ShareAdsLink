@@ -4,7 +4,7 @@
 .wrapper{
     overflow-y:scroll;
     width: 100vw;
-    height: 50vw;
+    height: 100vw;
     scroll-snap-type: y mandatory;
 }
 
@@ -58,7 +58,7 @@ header{
 }
 
 nav{float: right;}
-nav li{ float:left; list-style: none; }
-nav a{line-height: 60px; color:black; padding:0 20px; display: block;}
+.button{ float: left; list-style: none; }
+nav .button{line-height: 60px; color:black; padding:0 20px; display: block;}
 
 header div{ color:black; line-height: 60px; float:left; padding-left: 70px;}
