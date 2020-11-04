@@ -1,51 +1,18 @@
+//App.js
 import React from 'react';
-import {Link, Route, BrowserRouter as Router, Switch} from "react-router-dom";
-import './App.css';
-import User from './Component/User';
-import AdContent from './Component/AdContent';
 import Home from './Home';
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import Login from "./Component/Login";
+import SignUp from "./Component/SignUp";
 
 function App() {
   return (
     <Router>
-      <header>
-        <div>ShareAdsLink</div>
-        <nav>
-            <Link to="/User">
-              <li className="button">Login</li>
-            </Link>
-            <Link to="/AdContent">
-              <li className="button">SignUp</li>
-            </Link>
-        </nav>
-      </header>
+      <Route path="/" component={Home} exact/>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/User" component={User} />
-        <Route path="/Adcontent" component={AdContent}/>
+        <Route exact path="/Login" component={Login} />
+        <Route path="/SignUp" component={SignUp} />
       </Switch>
-      
-      <div className="wrapper">
-        
-        <div className="firstPage">
-          <div className="ment">
-            <p>광고 공유,</p>
-            <p>쉽고 간편하게.</p>
-            <p className="sub">어려운 홍보도 ShareAdsLink에서 쉽게 시작하세요.</p>
-          </div>
-          <div className="photo"></div>
-        </div>
-
-        <div className="secondPage">
-          <div className="ment">
-            <p>광고 공유,</p>
-            <p>쉽고 간편하게.</p>
-            <p className="sub">어려운 홍보도 ShareAdsLink에서 쉽게 시작하세요.</p>
-          </div>
-        </div>
-        <div className="thirdPage"></div>
-        <div className="footer"></div>
-      </div>
     </Router>
   );
 }
