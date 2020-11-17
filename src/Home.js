@@ -9,15 +9,19 @@ function Home(){
       <div className="wrapper">
         <div className="firstPage">
           <div className="ment">
-            <p>광고 공유,</p>
-            <p>쉽고 간편하게.</p>
-            <p className="sub">어려운 홍보도 ShareAdsLink에서 시작하기</p>
+            <p>웹 페이지 홍보,</p>
+            <p><span>광고 교환</span>으로 쉽고 저렴하게.</p>
+            <p className="sub">어려운 웹 페이지 홍보도 ShareAdsLink에서 저렴하게 시작하세요.</p>
           </div>
           <div className="photo"></div>
         </div>
 
         <div className="secondPage">
-          <div className="ment"></div>
+          <div className="ment">
+            <div>어떻게?</div>
+            <div className="sub">비밀이야 아아아</div>
+            <div>방법은?</div>
+          </div>
         </div>
         <div className="thirdPage"></div>
         <div className="footer"></div>

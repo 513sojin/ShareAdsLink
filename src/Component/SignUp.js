@@ -6,6 +6,7 @@ function SignUp(){
     return(
         <div>
            <Header/>
+           
         </div>
     );
 }
